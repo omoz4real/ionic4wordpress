@@ -1,0 +1,7 @@
+{
+  "name": "ionicwordpress",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
