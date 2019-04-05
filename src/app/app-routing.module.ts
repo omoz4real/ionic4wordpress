@@ -11,9 +11,18 @@ const routes: Routes = [
     path: 'home',
     loadChildren: './home/home.module#HomePageModule'
   },
-  {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
+   {
+    path: "home/:category",
+    loadChildren: "./home/home.module#HomePageModule"
+  },
+   {
+    path: "posts/:id",
+    loadChildren: "./post-detail/post-detail.module#PostDetailPageModule"
+  },
+  
+  { 
+  path: 'categories', 
+  loadChildren: './categories/categories.module#CategoriesPageModule' 
   }
 ];
 

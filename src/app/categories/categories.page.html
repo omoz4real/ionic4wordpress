@@ -11,9 +11,9 @@
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let item of items">
-      <ion-icon [name]="item.icon" slot="start"></ion-icon>
-      {{item.title}}
+    <ion-item [routerLink]="['/home', item.id]" *ngFor="let item of categories$ | async">
+      <ion-icon name="search" slot="start"></ion-icon>
+      {{item.name}}
       <div class="item-note" slot="end">
         {{item.note}}
       </div>
