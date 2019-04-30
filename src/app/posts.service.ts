@@ -11,7 +11,7 @@ export class PostsService {
 
   constructor(private http: HttpClient) { }
   
-  private baseURL = "http://afrokizzme.com";
+  private baseURL = "https://dailypost.ng";
   
   fetchPosts() {
     return this.http
