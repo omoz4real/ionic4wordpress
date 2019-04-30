@@ -12,12 +12,16 @@
 
 <ion-content padding>
   <div *ngIf="post$ | async as post">
-    <h1 [innerHTML]="post.title.rendered"> </h1>
-    <p no-margin> <small> Published by {{post._embedded.author[0].name }} on {{post.date }} </small> </p>
-   
-    <div text-center padding *ngIf="post.featured_image">
+      <div *ngIf="post.featured_image">
       <img class="featured_image" [src]="post.featured_image" alt="Featured Image">
     </div>
+      
+      
+    <h1 [innerHTML]="post.title.rendered"> </h1>
+      <ion-item>
+    <p no-margin> <small> Published by {{post._embedded.author[0].name }} on {{post.date }} </small> </p>
+      </ion-item>
+    
     <div [innerHTML]="post.content.rendered"></div>
   </div>
 </ion-content>

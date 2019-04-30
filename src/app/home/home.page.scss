@@ -4,6 +4,16 @@
 
 .featured-image {
     max-height: 150px;
+    max-width: 150px;
     margin-left: auto;
     margin-right: auto;
+}
+
+h3{
+    margin-left: 15px !important;
+}
+:host {
+    ion-item {
+        border-bottom: 2px dotted var(--ion-color-medium);
+    }
 }
