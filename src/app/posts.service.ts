@@ -9,9 +9,12 @@ import get from "lodash/get";
 })
 export class PostsService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
   
-  private baseURL = "https://dailypost.ng";
+    }
+  
+  private baseURL = "https://dailypost.ng/";
+  
   
   fetchPosts() {
     return this.http

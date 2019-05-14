@@ -22,6 +22,25 @@
     <p no-margin> <small> Published by {{post._embedded.author[0].name }} on {{post.date }} </small> </p>
       </ion-item>
     
-    <div [innerHTML]="post.content.rendered"></div>
+    <div [innerHTML]="sanitizer.bypassSecurityTrustHtml(post.content.rendered)"></div>
+    
+    <p [innerHTML]="sanitizer.bypassSecurityTrustHtml(post.content.rendered)">
+        
+    </p>
+    
+     <div [innerHTML]='sanitizer.bypassSecurityTrustHtml(post.content.rendered)' width="640" height="360" frameborder="0"
+        webkitallowfullscreen mozallowfullscreen allowfullscreen>
+    </div>
+    
+
   </div>
+    
+    <button (click)="shareTwitter()"><ion-icon name="logo-twitter"></ion-icon></button>
+  <button (click)="shareEmail()"><ion-icon name="send"></ion-icon></button>
+  <button (click)="shareFacebook()"><ion-icon name="logo-facebook"></ion-icon></button>
+  <button (click)="shareWhatsApp()"><ion-icon name="logo-whatsapp"></ion-icon></button>
+  <button ion-button small round icon-left outline  mode="ios" color="shareBtn" (click)="shareWhatsApp()">
+              <ion-icon name="share"></ion-icon>
+              <b>Share</b>
+          </button>
 </ion-content>

@@ -3,14 +3,19 @@
 }
 
 .featured-image {
-    max-height: 150px;
-    max-width: 150px;
+    max-height: 100px;
+    max-width: 100px;
     margin-left: auto;
     margin-right: auto;
 }
 
 h3{
     margin-left: 15px !important;
+    font-size: 16px;
+}
+
+.list, .list-md{
+    margin-bottom: 10px !important;
 }
 :host {
     ion-item {

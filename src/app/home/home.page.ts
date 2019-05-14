@@ -6,6 +6,8 @@ import { Router } from "@angular/router";
 import { ActivatedRoute, ParamMap } from "@angular/router";
 import { switchMap } from "rxjs/operators";
 
+import { DomSanitizer } from '@angular/platform-browser';
+
 @Component({
   selector: "app-home",
   templateUrl: "home.page.html",
@@ -15,7 +17,8 @@ export class HomePage implements OnInit {
   constructor(
     private postSrvc: PostsService,
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private sanitizer: DomSanitizer
   ) {}
 
   posts$: Observable<any>;

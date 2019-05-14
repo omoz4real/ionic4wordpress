@@ -9,7 +9,7 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="outer-content">
 
     <!--  <div (click)="loadPost(post)" padding-bottom *ngFor="let post of posts$ | async">
         <div>
@@ -67,6 +67,14 @@
                   <p no-margin> <small> Published by {{post._embedded.author[0].name }} on  {{post.date }} </small> </p>
         </ion-item>
               
+        <button (click)="shareTwitter()"><ion-icon name="logo-twitter"></ion-icon></button>
+  <button (click)="shareEmail()"><ion-icon name="send"></ion-icon></button>
+  <button (click)="shareFacebook()"><ion-icon name="logo-facebook"></ion-icon></button>
+  <button (click)="shareWhatsApp()"><ion-icon name="logo-whatsapp"></ion-icon></button>
+  <button ion-button small round icon-left outline  mode="ios" color="shareBtn" (click)="share()">
+              <ion-icon name="share"></ion-icon>
+              <b>Share</b>
+          </button>
 <!--                <div [innerHTML]="post.excerpt.rendered">
 
             </div>-->
