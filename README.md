@@ -3,8 +3,11 @@
 # Prerequisites
 
 Git
+
 NodeJS (>= v8.12.0)
+
 NPM (>= 6.4.1)
+
 Ionic CLI (4.12.0)
 
 # This Installation works on MacOS. Not yet tested on Windows and Linux.
