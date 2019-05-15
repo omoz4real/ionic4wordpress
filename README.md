@@ -13,7 +13,7 @@ Clone the project and change your directory to the project directory
 
 $ git clone https://github.com/omoz4real/ionic4wordpress.git && cd ionicwordpress
 
-# Open posts.service.ts and change the baseURL to your wordpress website URL
+Open posts.service.ts and change the baseURL to your wordpress website URL
 
 # Install
 $ npm install
