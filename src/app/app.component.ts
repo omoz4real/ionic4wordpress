@@ -48,7 +48,7 @@ export class AppComponent {
 
   setupPush() {
     // I recommend to put these into your environment.ts
-    this.oneSignal.startInit('0e0fe7bd-9154-4770-b3fb-06fc54133458', '273442396070');
+    this.oneSignal.startInit('00000000-0000-0000-0000-000000000000', '000000000000');
  
     this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.None);
  
