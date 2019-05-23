@@ -13,7 +13,7 @@ export class PostsService {
   
     }
   
-  private baseURL = "https://dailypost.ng/";
+  private baseURL = "https://omosaziegbe.com";
   
   
   fetchPosts() {

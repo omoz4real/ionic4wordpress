@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.omos.ionicwordpress" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>ionicwordpress</name>
-    <description>An awesome Ionic/Cordova app.</description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+    <description>Wordpress Ionic Client</description>
+    <author email="omoz4real@yahoo.com" href="http://omosaziegbe.com/">Omos Aziegbe</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -84,7 +84,9 @@
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
     <plugin name="cordova-plugin-x-socialsharing" spec="^5.4.4" />
     <plugin name="cordova-plugin-file" spec="^6.0.1" />
-    <engine name="browser" spec="5.0.4" />
     <plugin name="cordova-sqlite-storage" spec="^3.2.0" />
     <plugin name="cordova-plugin-youtube-video-player" spec="^2.3.0" />
+    <plugin name="onesignal-cordova-plugin" spec="^2.4.7" />
+    <engine name="browser" spec="5.0.4" />
+    <engine name="android" spec="7.0.0" />
 </widget>

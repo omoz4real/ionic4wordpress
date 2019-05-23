@@ -10,6 +10,11 @@
 </ion-header>
 
 <ion-content padding class="outer-content">
+    
+    <ion-refresher slot="fixed" (ionRefresh)="ionRefresh($event)" (ionPull)="ionPull($event)" (ionStart)="ionStart($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="Pull to refresh" refreshingSpinner="circles" refreshingText="Refreshing...">
+    </ion-refresher-content>
+  </ion-refresher>
 
     <!--  <div (click)="loadPost(post)" padding-bottom *ngFor="let post of posts$ | async">
         <div>

@@ -22,14 +22,10 @@
     <p no-margin> <small> Published by {{post._embedded.author[0].name }} on {{post.date }} </small> </p>
       </ion-item>
     
-    <div [innerHTML]="sanitizer.bypassSecurityTrustHtml(post.content.rendered)"></div>
-    
-    <p [innerHTML]="sanitizer.bypassSecurityTrustHtml(post.content.rendered)">
-        
-    </p>
+
     
      <div [innerHTML]='sanitizer.bypassSecurityTrustHtml(post.content.rendered)' width="640" height="360" frameborder="0"
-        webkitallowfullscreen mozallowfullscreen allowfullscreen style="background: grey; color: black; margin: 5px">
+        webkitallowfullscreen mozallowfullscreen allowfullscreen>
     </div>
     
 

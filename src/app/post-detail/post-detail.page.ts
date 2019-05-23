@@ -18,7 +18,7 @@ import { File } from '@ionic-native/file/ngx'
 export class PostDetailPage implements OnInit {
     
     text = 'Check out the latest News from Us!';
-  url = 'https://omosaziegbe.com.com';
+  url = 'https://omosaziegbe.com';
 
   constructor(private route: ActivatedRoute, private postSrvc: PostsService, private socialSharing: SocialSharing,private sanitizer: DomSanitizer) {}
   post$: Observable<any>;
